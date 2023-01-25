@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-image</title>
+    <style>
+        .box{
+            width: 100%;
+            height: 400px;
+            background-image: url("url2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: local;
+        }
+        h1 {
+            color: red;
+            font-style:inherit;
+
+        }
+        .right{
+            background-color: red;
+            color: white;
+            /* background-origin: border-box; */
+            float: right;
+            right: auto;
+           }
+           .contain{
+            color: greenyellow;
+            text-align: center;
+           }
+           .email{
+            
+            text-align: center;
+            
+           }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div><h1>NETFLIXE</h1>
+       </div>
+        <div class="right">
+        <select name="language" class="language">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Gujrati">Gujrati</option>
+        </select>
+       <input type="button" value="Sing In">
+       
+           </div>
+           <div class="contain"><h2>Unlimited movies, TV shows and more.</h2>
+            <h2>Watch anywhere. Cancel anytime.</h2></div>
+            <div class="email">
+                <input type="email" name="" id="" placeholder="Email Address">
+                <input type="button" value="Get Started">
+            </div>
+</body>
+</html>
