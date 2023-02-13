@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.manu{
+    padding: 10px;
+    float: inline-start;
+    flex-direction: column;
+    gap: 15px;
+    font-style: normal;
+    font-weight: bold;
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    height: 66px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.5px;
+}
+
+@media (max-width:900px) {
+    header {
+
+        height: 122px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        flex-direction: column;
+    }
+
+    .rightbox {
+        display: flex;
+        margin: 12px;
+    }
+}
+
+@media (max-width:400px) {
+
+    .rightbox {
+        display: flex;
+        margin: 9px;
+    }
+    ul li,mx-2{
+        font-size: 9px;
+    }   
+}
+
+.rightbox {
+    display: flex;
+    margin: 12px;
+}
+
+nav {
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+.left img {
+    width: 25px;
+    height: 23px;
+}
+
+.container {
+    padding: 0 10vw;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 9px;
+}
+nav ul li:hover{
+    cursor: pointer;
+}
+.mx-2:hover{
+    cursor: pointer;
+}
+
+.section-1 {
+    background: #e6e8e9a6;
+
+}
+
+.section-2 {
+    background: rgb(158, 248, 230);
+}
+
+.section-2 .img {
+    padding: 1px;
+    width: 9.8vw;
+    margin: 1vw;
+}
+
+.section-3 .img {
+    width: 13.7vw;
+}
+
+.home-img {
+    width: 80vw;
+
+}
+
+.img {
+    width: 12vw;
+
+}
+.img:hover{
+    cursor: pointer;
+}
+.bigimg:hover{
+    cursor: pointer;
+}
+footer {
+    padding: 23px;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}

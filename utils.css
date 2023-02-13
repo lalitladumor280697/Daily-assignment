@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.bolder{
+    font-weight: bolder;
+}
+.mx-2{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.search{
+    width: 30vw;
+    padding: 7px 17px;
+    border: 0.5px solid grey;
+    background: rgba(245, 243, 243, 0.679);
+    border-radius: 5px;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.my-2{
+    margin: 12px 0;
+}
