@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILL</title>
+    <link rel="stylesheet" href="bill.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="bill.js"></script>
+   
+</head>
+<body>
+   <div class="page">
+    <div class="sider">
+      <div class="heading"><h1>CHAMUNDA MOBILE</h1>
+        <div class="mobile">
+            <ul>
+              <li style="color: BLACK;"> <i class="fa-brands fa-apple" style="color: rgb(185, 109, 109);"> </i>I PHONE</li>
+              <li style="color: blue;">SAMSUNG</li>
+              <li style="color: RED;">ONE PLUSE</li>
+              <li style="color: rgb(37, 34, 34);">OPPO</li>
+              <li style="color: skyblue;">VIVO</li>
+              <li style="color: rgb(235, 164, 33);"><mark >MI</mark></li>
+              <li style="color: black;"><mark>REALME</mark></li>
+              <li style="color: skyblue;">NOKIA</li>
+
+
+            </ul>
+        </div>
+        <div class="address">
+             Shop No.: 147, Ground floor,Poddar Arcade,Khannd Bazar,Surat.
+        </div>
+      </div>
+     </div>
+     <div class="detail">
+      <table>
+          <tr>
+              <th style="background-color:  rgb(40, 58, 90);">NAME: </th>
+              <th> <input type="text"></th>
+              <th  style="background-color:  rgb(40, 58, 90);">BILL NO:</th>
+              <th> <input type="number" name="" id=""></th>
+
+          </tr>
+         <tr>
+          <th  style="background-color:  rgb(40, 58, 90);">MOBILE NO: </th>
+          <th> <input type="number" name="" id=""></th>
+          <th  style="background-color:  rgb(40, 58, 90);">Sr.No.: </th>
+          <th> <input type="number" name="" id=""></th>
+         </tr>
+         <tr>
+          <th  style="background-color:  rgb(40, 58, 90);">E-MAIL: </th>
+          <th><input type="email" name="" id=""></th>
+          <th  style="background-color:  rgb(40, 58, 90);">DATE: </th>
+          <th><input type="date" name="" id=" date" > </th>
+         </tr>
+       
+      </table> <br>
+           <div class="bill">
+            <table border="1px solid black">
+              <tr>
+                <th colspan="4" style=" background-color:  rgb(40, 58, 90);">Description</th>
+               
+                <th style=" background-color: rgb(40, 58, 90);">Pcs.</th>
+                <th style=" background-color:  rgb(40, 58, 90);">Rate</th>
+                <th style=" background-color: rgb(40, 58, 90);">Amount</th>
+              </tr>
+              <tr>
+                <th colspan="3" style=" background-color: rgb(40, 58, 90);">Company Model: </th>
+                <th><input type="text" name="" id=""></th>
+                <th rowspan="2"><input type="number" name="" id=""></th>
+                <th  rowspan="2"> <input type="number" placeholder="RS"></th>
+                <th  rowspan="2"> <input type="text" placeholder="TOTAL RS"></th>
+              </tr>
+              <tr>
+                <th colspan="3" style=" background-color: rgb(40, 58, 90);">Sr.No.: </th>
+                <th><input type="number" name="" id=""></th>
+              </tr>
+              <tr>
+                <th colspan="4" rowspan="3" style=" background-color: rgb(40, 58, 90);">TOTAL:</th>
+                <th > <label for=""> CASH </label>   <input type="radio" name="PAYMENT" id=""></th>
+                <th rowspan="3" colspan="2"> <input type="number"></th>
+              </tr>
+              <tr>
+                <!-- <th colspan="4"></th> -->
+                <th > <label for=""> ONLINE/UPI     </label> <input type="radio" name="PAYMENT" id=""></th>
+              </tr>
+              <tr>
+                <!-- <th colspan="4"></th> -->
+                <th  > <label for=""> CARD </label> <input type="radio" name="PAYMENT" id=""></th>
+              </tr>
+             <tr>
+              <th colspan="7" class="other">
+                NOTE: <input type="text" name="" id="">
+              </th>
+             </tr>
+             <tr>
+              <th colspan="7" class="war">
+                WARRNTY: <input type="date" name="" id="">
+              </th>
+             </tr>
+             <tr >
+              <th colspan="7" class="btn" style=" background-color: rgb(40, 58, 90)">  <button id="submit" onclick="changedata(event)" type="submit" style="color: red;">SUBMIT</button>  <button id="reset" onclick="changedata(event)" type="reset" style="color: red;">RESET</button> <button id="pdf" onclick="changedata(event)" style="color: red;">PDF/PRINT</button></th>
+             </tr>
+              
+            </table> <br>
+              </div>
+          
+  </div>
+  <div class="sider">
+    <div class="heading"><h1>CHAMUNDA MOBILE</h1>
+      <div class="mobile">
+          <ul>
+            <li style="color: BLACK;"> <i class="fa-brands fa-apple" style="color: rgb(185, 109, 109);"> </i>I PHONE</li>
+            <li style="color: blue;">SAMSUNG</li>
+            <li style="color: RED;">ONE PLUSE</li>
+            <li style="color: rgb(37, 34, 34);">OPPO</li>
+            <li style="color: skyblue;">VIVO</li>
+            <li style="color: rgb(235, 164, 33);"><mark >MI</mark></li>
+            <li style="color: black;"><mark>REALME</mark></li>
+            <li style="color: skyblue;">NOKIA</li>
+
+
+          </ul>
+      </div>
+   </div>
+  
+   
+
+</body>
+</html>

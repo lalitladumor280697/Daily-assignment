@@ -1,0 +1,142 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.page{
+    width: 100%;
+    display: flex;
+    background-color: darkcyan;
+}
+.sider{
+    width: 14%;
+    height: 600px;
+    background-color: green;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    display: block;
+}
+h1{
+    text-align: center;
+    color: azure;
+    /* display: inline; */
+    display: flex;    
+    display: inline-block;
+    justify-content: center;
+    font-style:initial;
+
+}
+.mobile{
+    display: flex;
+ 
+    background-color: aliceblue;
+    width: 60%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    float: right;
+
+}
+ul li{
+    color: blue;
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+.address{
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    font-size: large;
+}
+.num{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
+    align-items:flex-start;
+    float: right;
+}
+.number1{
+    width: 70%;
+    text-align: start;
+    display: inline;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    justify-content: center;
+}
+.number2{
+    width: 70%;
+    text-align: end;
+    display: inline;
+    display: block;
+    justify-content: center;
+    padding: 10px;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    float: left;
+    table-layout: fixed;
+}
+table{
+width: 100%;
+display: inline-flex;
+display: flex;
+border: 2px solid rgb(85, 129, 85);
+border-radius: 10px;
+background-color:indianred ;
+}
+th{
+    padding: 5px;
+    margin: 5px;
+    color: orange;
+
+}
+input{
+    border-radius: 5px ;
+   
+    text-anchor: middle;
+   background-color:   white;
+}
+.midel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.bill table{
+  display: block;
+  background-color: indianred;
+  border: 2px solid green;
+box-shadow: 5px;
+  height: 300px;
+  
+}
+label:hover{
+    background-color: cornflowerblue;
+    color: red;
+    font-style: italic;
+}
+.other{
+    background-color: rgb(196, 137, 49);
+    color: red;
+}
+.war{
+    background-color: darkgrey;
+    color: red;
+}
+.btn button{
+        font-weight: bolder;
+}
