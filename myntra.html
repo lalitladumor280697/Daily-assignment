@@ -11,43 +11,232 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="util.css">
     <title>myntra clon</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.manu{
+    padding: 10px;
+    float: inline-start;
+    flex-direction: column;
+    gap: 15px;
+    font-style: normal;
+    font-weight: bold;
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    height: 66px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.5px;
+
+}
+.MANU{
+    font-weight: bold;
+    padding: 5px;
+}
+@media (max-width:900px) {
+    header {
+
+        height: 122px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        flex-direction: column;
+    }
+
+    .rightbox {
+        display: flex;
+        margin: 12px;
+    }
+}
+
+@media (max-width:400px) {
+
+    .rightbox {
+        display: flex;
+        margin: 9px;
+    }
+    ul li,mx-2{
+        font-size: 9px;
+    }   
+}
+
+.rightbox {
+    display: flex;
+    margin: 12px;
+}
+
+nav {
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+.left img {
+    width: 25px;
+    height: 23px;
+}
+
+.container {
+    padding: 0 10vw;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 9px;
+    font-weight: bolder;
+}
+nav ul li:hover{
+    cursor: pointer;
+}
+.mx-2:hover{
+    cursor: pointer;
+}
+
+.section-1 {
+    background: #e6e8e9a6;
+
+}
+
+.section-2 {
+    background: rgb(158, 248, 230);
+}
+
+.section-2 .img {
+    padding: 1px;
+    width: 9.8vw;
+    margin: 1vw;
+}
+
+.section-3 .img {
+    width: 13.7vw;
+}
+
+.home-img {
+    width: 80vw;
+
+}
+
+.img {
+    width: 12vw;
+
+}
+.img:hover{
+    cursor: pointer;
+}
+.bigimg:hover{
+    cursor: pointer;
+}
+footer {
+    padding: 23px;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+      
+       .flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.bolder{
+    font-weight: bolder;
+}
+.mx-2{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.search{
+    width: 30vw;
+    padding: 7px 17px;
+    border: 0.5px solid grey;
+    background: rgba(245, 243, 243, 0.679);
+    border-radius: 5px;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.my-2{
+    margin: 12px 0;
+}
+a{
+    list-style-type: none;
+    border: none;
+    border-style: none;
+
+}
+
+li{
+    border: none;
+    list-style-type: none;
+    font-weight: bold;
+}
+ul{
+    font-weight: bold;
+}
+    </style>
 </head>
 
 <body>
     <div class="box"> 
         <table class="manu">
               <th> <img src="myntra.webp" alt="" width="50%" height="60px"></th> 
-               <th><a href="https://www.myntra.com/shop/men">
-                <li class="pr-3 pl-8">MEN</li>
-                </a></th>
-                <th> <a href="https://www.myntra.com/shop/women">
-                    <li class="px-3">WOMAN</li>
-                    </a></th>
-                 <th> <a href="https://www.myntra.com/shop/kids">
-                    <li class="px-3">KIDS</li>
-                    </a></th>  
-                  <th> <a href="https://www.myntra.com/shop/home-living">
-                    <li class="px-3">HOME&LIVING</li>
-                  </a></th>   
-                  <th>  <a href="https://www.myntra.com/personal-care">
-                    <li class="px-3">BEAUTY</li>
-                    </a></th>
-              <th><input type="search" name="search" id="" placeholder="search for products,brand & more " style="width: 110%;"></th>
+               <th>
+                <li class="pr-3 pl-8">MEN  <a href="https://www.myntra.com/shop/men"></a></li>
+               </th>
+                <th> 
+                    <li class="px-3">WOMAN  <a href="https://www.myntra.com/shop/men"></a></li>
+                    </th>
+                 <th>
+                    <li class="px-3">KIDS  <a href="https://www.myntra.com/shop/men"></a></li>
+                </th>  
+                  <th>
+                    <li class="px-3">HOME&LIVING  <a href="https://www.myntra.com/shop/men"></a></li>
+                  </th>   
+                  <th>  
+                    <li class="px-3">BEAUTY <a href="https://www.myntra.com/personal-care"></a></li>
+                    </th>
+              <th><input type="search" name="search" id="" placeholder="search for products,brand & more " style="width: 90%;"></th>
              
              
                 <th>
-                    <a href="https://www.myntra.com/personal-care">
-                        <li class="px-3">PROFILR</li>
-                        </a>
+                    
+                        <li class="px-3">PROFIL <i class="fa-solid fa-user"></i> <a href="https://www.myntra.com/personal-care"></a></li>
+                       
                 </th>
                 <th>
-                    <a href="https://www.myntra.com/personal-care">
-                        <li class="px-3">WISHLIST</li>
-                        </a>
+                    
+                        <li class="px-3">WISHLIST <a href="https://www.myntra.com/personal-care"></a></li>
+                       
                 </th>
-                <th>  <a href="https://www.myntra.com/personal-care">
-                    <li class="px-3">BAG</li>
-                    </a></th>
+                <th>  
+                    <li class="px-3">BAG <a href="https://www.myntra.com/personal-care"></a></li>
+                  </th>
           
         </table>
     <section class="container section-1">
