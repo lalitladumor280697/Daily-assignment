@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        /* Styling for the slider container */
+        #slider-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            background-color: pink;
+        }
+
+        /* Styling for individual slides */
+        .slide {
+            width: 100%;
+            display: none;
+        }
+
+        /* Styling for the next and previous buttons */
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        #prev-button {
+            left: 10px;
+        }
+
+        #next-button {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Slider Container -->
+    <div id="slider-container">
+        <!-- Slides -->
+        <center>
+            <div class="slide">
+                <img src="img/crocs13.webp" alt="Image 1" style="background-color: pink;">
+            </div>
+            <div class="slide">
+                <img src="img/crocs12.webp" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="img/crocs11.webp" alt="Image 3">
+            </div>
+        </center>
+
+        <!-- Navigation Buttons -->
+        <div id="prev-button" class="slider-button" onclick="prevSlide()">&#10094;</div>
+        <div id="next-button" class="slider-button" onclick="nextSlide()">&#10095;</div>
+    </div>
+
+    <script>
+        // JavaScript for Image Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        // Function to display the current slide
+        function showSlide() {
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            // Show the current slide
+            slides[currentSlide].style.display = 'block';
+        }
+
+        // Function to display the next slide
+        function nextSlide() {
+            currentSlide++;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0; // Loop to the first slide
+            }
+            showSlide();
+        }
+
+        // Function to display the previous slide
+        function prevSlide() {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1; // Loop to the last slide
+            }
+            showSlide();
+        }
+
+        // Initially show the first slide
+        showSlide();
+    </script>
+</body>
+
+</html>
